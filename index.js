@@ -51,3 +51,10 @@ menuBtn.addEventListener('click',(e)=>{
     const isOpen = navLinks.classList.contains('open')
     menuIcon.setAttribute('class', isOpen ? 'ri-close-line' : 'ri-menu-line')
 })
+
+document.querySelectorAll('.auth_form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert("Función en desarrollo 🚀");
+    });
+});
